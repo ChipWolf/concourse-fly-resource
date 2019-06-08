@@ -47,7 +47,7 @@ login() {
   local insecure_arg=""
   test "$insecure" = "true" && insecure_arg="--insecure"
 
-  echo "Logging in..."
+  echo "Logging in... $1, $2, $3, $4, $5, $6, $7"
   local out=$($FLY login -t $target $insecure_arg -c $url -n $team --username=$username --password=$password 2>&1)
 
   # This sucks
