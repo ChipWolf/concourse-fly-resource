@@ -42,7 +42,7 @@ login() {
   local team=$4
   local insecure=$5
   local tried=$6
-  local target=$7
+  local target=main
 
   local insecure_arg=""
   test "$insecure" = "true" && insecure_arg="--insecure"
